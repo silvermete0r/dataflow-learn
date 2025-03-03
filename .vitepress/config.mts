@@ -8,15 +8,31 @@ export default defineConfig({
     // https://vitepress.dev/reference/default-theme-config
     nav: [
       { text: 'Home', link: '/' },
-      { text: 'Examples', link: '/markdown-examples' }
+      { text: 'Curriculum', link: '/curriculum' }
     ],
 
     sidebar: [
       {
-        text: 'Examples',
+        text: 'Getting Started',
         items: [
-          { text: 'Markdown Examples', link: '/markdown-examples' },
-          { text: 'Runtime API Examples', link: '/api-examples' }
+          { text: 'Curriculum Overview', link: '/curriculum' },
+          { text: 'Learning Path', link: '/learning-path' }
+        ]
+      },
+      {
+        text: 'Math Foundations',
+        items: [
+          { text: 'Linear Algebra', link: '/phase1_math_foundations/linear_algebra' },
+          { text: 'Probability & Statistics', link: '/phase1_math_foundations/probability_statistics' },
+          { text: 'Calculus', link: '/phase1_math_foundations/calculus' }
+        ]
+      },
+      {
+        text: 'Real-World Applications',
+        items: [
+          { text: 'ML Introduction', link: '/phase2_real_world_applications/ml_introduction' },
+          { text: 'Data Understanding', link: '/phase2_real_world_applications/data_understanding' },
+          { text: 'Data Visualization', link: '/phase2_real_world_applications/data_visualization' }
         ]
       }
     ],
